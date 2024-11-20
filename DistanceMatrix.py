@@ -1,8 +1,5 @@
 import pandas as pd
-import googlemaps
-from itertools import tee
 import yaml
-import math
 from typing import List
 import requests
 
@@ -34,7 +31,7 @@ def generate_distance_matrix_curl(file_in_name: str,key: str,**kwargs)->List[Lis
             for k in range(j, min(j+25, len(df))):
                 url += f"{df.iloc[k]['Latitude']},{df.iloc[k]['Longitude']}|"
             url = url[:-1]
-            url += f"&key={keys}"
+            url += f"&key={key}"
             response = requests.get(url)
             for k in range(j, min(j+25, len(df))):
                 distanceMatrix[i].append(response.json()['rows'][0]['elements'][k-j]['distance']['value']/1000)
@@ -54,12 +51,13 @@ def generate_distance_matrix_curl(file_in_name: str,key: str,**kwargs)->List[Lis
 
 if __name__ == "__main__":
     #get the key from the yaml file
+    
     with open("config.yaml", 'r') as stream:
-        key = yaml.safe_load(stream)['key']
-        input_file = yaml.safe_load(stream)['input_file']
-        outputDistFile = yaml.safe_load(stream)['outputDistFile']
-        outputTimeFile = yaml.safe_load(stream)['outputTimeFile']
+        config = yaml.safe_load(stream)
+        key = config['key']
+        input_file = config['inputFile']
+        outputDistFile = config['outputDistFile']
+        outputTimeFile = config['outputTimeFile']
         
         
     generate_distance_matrix_curl("data.csv", key, distanceFile = outputDistFile, timeFile = outputTimeFile)
-    
