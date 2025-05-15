@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ca2842448639f5bb0506947c6bfe0b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<h3 align="center" style="font-size:24px; margin-top:10px;">
+    Route - Time 0
+</h3>
+    
+            <div class="folium-map" id="map_4ca2842448639f5bb0506947c6bfe0b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ca2842448639f5bb0506947c6bfe0b5 = L.map(
+                "map_4ca2842448639f5bb0506947c6bfe0b5",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_918c9c45eb473bad99650526ac0aaeff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_918c9c45eb473bad99650526ac0aaeff.addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var marker_cc97492b4e9fd49dec5b2babcce202cd = L.marker(
+                [35.407167, -108.234917],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_d0ca1f3973ca06557e5771fc23678c14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c0797455ae439ac7c27d1e6acf0d556 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9038d1c9b2241956f6e56e1c68f041dd = $(`<div id="html_9038d1c9b2241956f6e56e1c68f041dd" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> nan<br><b>Capacity:</b> nan<br><b>Delivery Amount:</b> nan<br><b>Inventory:</b> nan</div>`)[0];
+                popup_6c0797455ae439ac7c27d1e6acf0d556.setContent(html_9038d1c9b2241956f6e56e1c68f041dd);
+            
+        
+
+        marker_cc97492b4e9fd49dec5b2babcce202cd.bindPopup(popup_6c0797455ae439ac7c27d1e6acf0d556)
+        ;
+
+        
+    
+    
+            marker_cc97492b4e9fd49dec5b2babcce202cd.bindTooltip(
+                `<div>
+                     Preferred ID: Depot
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc97492b4e9fd49dec5b2babcce202cd.setIcon(icon_d0ca1f3973ca06557e5771fc23678c14);
+            
+    
+            var marker_df392b8b8325f2a45191fe3efe694513 = L.marker(
+                [35.32923797, -108.8098128],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_733ccd9f773245d378a573159381219e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ad903af11f05b5c8c599544530be5a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fea4a5240552f823d4e2db503c8a6f8 = $(`<div id="html_1fea4a5240552f823d4e2db503c8a6f8" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 5.0<br><b>Capacity:</b> 1200.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 0.0</div>`)[0];
+                popup_8ad903af11f05b5c8c599544530be5a9.setContent(html_1fea4a5240552f823d4e2db503c8a6f8);
+            
+        
+
+        marker_df392b8b8325f2a45191fe3efe694513.bindPopup(popup_8ad903af11f05b5c8c599544530be5a9)
+        ;
+
+        
+    
+    
+            marker_df392b8b8325f2a45191fe3efe694513.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df392b8b8325f2a45191fe3efe694513.setIcon(icon_733ccd9f773245d378a573159381219e);
+            
+    
+            var marker_b1ade050394b82969651e5d379dfa3b4 = L.marker(
+                [35.6101355, -108.5282439],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_9f0c0f487175d39f6b2e2969df6cd94b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66067c403e5ac9cd0adf61bad8d488bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d1f50f9d2f0e240c19213de49787002 = $(`<div id="html_7d1f50f9d2f0e240c19213de49787002" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 2.0<br><b>Capacity:</b> 1000.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 0.0</div>`)[0];
+                popup_66067c403e5ac9cd0adf61bad8d488bc.setContent(html_7d1f50f9d2f0e240c19213de49787002);
+            
+        
+
+        marker_b1ade050394b82969651e5d379dfa3b4.bindPopup(popup_66067c403e5ac9cd0adf61bad8d488bc)
+        ;
+
+        
+    
+    
+            marker_b1ade050394b82969651e5d379dfa3b4.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1ade050394b82969651e5d379dfa3b4.setIcon(icon_9f0c0f487175d39f6b2e2969df6cd94b);
+            
+    
+            var marker_c4808ea72aa20fbdc435990933444197 = L.marker(
+                [35.47805444, -108.3411384],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_7f51540d8ef58ef5c86d9850c071258a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13c61b3a21036ce38ea2a880d7b76375 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbb7d9daeb0c47e12f961e9c491616c2 = $(`<div id="html_bbb7d9daeb0c47e12f961e9c491616c2" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 2.0<br><b>Capacity:</b> 1200.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 680.0</div>`)[0];
+                popup_13c61b3a21036ce38ea2a880d7b76375.setContent(html_bbb7d9daeb0c47e12f961e9c491616c2);
+            
+        
+
+        marker_c4808ea72aa20fbdc435990933444197.bindPopup(popup_13c61b3a21036ce38ea2a880d7b76375)
+        ;
+
+        
+    
+    
+            marker_c4808ea72aa20fbdc435990933444197.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4808ea72aa20fbdc435990933444197.setIcon(icon_7f51540d8ef58ef5c86d9850c071258a);
+            
+    
+            var marker_74deac93644e4e09eabaf890a8eff32e = L.marker(
+                [35.46312211, -108.9559325],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_f645f19b2dcc7adf15142c5d20748681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c67a3afe8dd1cfe8d8648c9a4c210299 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2431a1245fd793292fcf2052c7d31f0 = $(`<div id="html_e2431a1245fd793292fcf2052c7d31f0" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 4.0<br><b>Capacity:</b> 1200.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 80.0</div>`)[0];
+                popup_c67a3afe8dd1cfe8d8648c9a4c210299.setContent(html_e2431a1245fd793292fcf2052c7d31f0);
+            
+        
+
+        marker_74deac93644e4e09eabaf890a8eff32e.bindPopup(popup_c67a3afe8dd1cfe8d8648c9a4c210299)
+        ;
+
+        
+    
+    
+            marker_74deac93644e4e09eabaf890a8eff32e.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74deac93644e4e09eabaf890a8eff32e.setIcon(icon_f645f19b2dcc7adf15142c5d20748681);
+            
+    
+            var marker_e9774a1a1cfdc720b56f1d0eda8b86d3 = L.marker(
+                [35.36235925, -107.968078],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_6b9ca8647dd1087beadf8a6813b8e9eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1b4380e3827b966b95ddf66b02b5623 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_945f4422f2f90b7506071824bd76de0f = $(`<div id="html_945f4422f2f90b7506071824bd76de0f" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 4.0<br><b>Capacity:</b> 275.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 0.0</div>`)[0];
+                popup_a1b4380e3827b966b95ddf66b02b5623.setContent(html_945f4422f2f90b7506071824bd76de0f);
+            
+        
+
+        marker_e9774a1a1cfdc720b56f1d0eda8b86d3.bindPopup(popup_a1b4380e3827b966b95ddf66b02b5623)
+        ;
+
+        
+    
+    
+            marker_e9774a1a1cfdc720b56f1d0eda8b86d3.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9774a1a1cfdc720b56f1d0eda8b86d3.setIcon(icon_6b9ca8647dd1087beadf8a6813b8e9eb);
+            
+    
+            var marker_a821d04adc86b57159496f34bd8bd45d = L.marker(
+                [35.36601699, -108.0755568],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_5d9cb691f326ab4cbbce730b3ca0c5c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c9b48e023e942bd3d9c90120e5abbac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a845ed4b689337ff906c5a81e1e8bd71 = $(`<div id="html_a845ed4b689337ff906c5a81e1e8bd71" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 5.0<br><b>Capacity:</b> 275.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 0.0</div>`)[0];
+                popup_7c9b48e023e942bd3d9c90120e5abbac.setContent(html_a845ed4b689337ff906c5a81e1e8bd71);
+            
+        
+
+        marker_a821d04adc86b57159496f34bd8bd45d.bindPopup(popup_7c9b48e023e942bd3d9c90120e5abbac)
+        ;
+
+        
+    
+    
+            marker_a821d04adc86b57159496f34bd8bd45d.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a821d04adc86b57159496f34bd8bd45d.setIcon(icon_5d9cb691f326ab4cbbce730b3ca0c5c4);
+            
+    
+            var marker_2066a49058a6fab6528717af8c90cf21 = L.marker(
+                [35.29681843, -108.0062987],
+                {
+}
+            ).addTo(map_4ca2842448639f5bb0506947c6bfe0b5);
+        
+    
+            var icon_50f8fb9d0bcfb42e16bf215d55811f42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_127db8a87e3fac6bcf2d61eb605a6828 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b54da483061e0a94b05d2702af4018a7 = $(`<div id="html_b54da483061e0a94b05d2702af4018a7" style="width: 100.0%; height: 100.0%;"><b>Household Size:</b> 2.0<br><b>Capacity:</b> 1200.0<br><b>Delivery Amount:</b> 0.0<br><b>Inventory:</b> 620.0</div>`)[0];
+                popup_127db8a87e3fac6bcf2d61eb605a6828.setContent(html_b54da483061e0a94b05d2702af4018a7);
+            
+        
+
+        marker_2066a49058a6fab6528717af8c90cf21.bindPopup(popup_127db8a87e3fac6bcf2d61eb605a6828)
+        ;
+
+        
+    
+    
+            marker_2066a49058a6fab6528717af8c90cf21.bindTooltip(
+                `<div>
+                     Preferred ID: Customer 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2066a49058a6fab6528717af8c90cf21.setIcon(icon_50f8fb9d0bcfb42e16bf215d55811f42);
+            
+    
+            map_4ca2842448639f5bb0506947c6bfe0b5.fitBounds(
+                [[35.3, -108], [35.65, -109]],
+                {}
+            );
+        
+</script>
+</html>
